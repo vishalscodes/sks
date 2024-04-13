@@ -1,0 +1,11 @@
+---
+layout: post
+title: "test"
+subtitle: "to see if this site works from the codebase"
+date: 2024-04-13 12:00:00
+author: "Shashi KS"
+hidden: true
+header-img: "img/post-bg-apple-event-2015.jpg"
+tags:
+  - first-post
+---
