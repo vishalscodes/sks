@@ -1,24 +1,22 @@
-Hux Blog User Manual
-====================
+# Hux Blog User Manual
 
-* Basics
-	* [Getting Started](#getting-started)
-	* [Development](#development)
-	* [Config](#configs)
-	* [Posts](#posts)
-* Components
-	* [SideBar](#sidebar)
-	* [Mini About Me](#mini-about-me)
-	* [Featured Tags](#featured-tags)
-	* [Friends](#friends)
-	* [Keynote Layout](#keynote-layout)
-* Misc
-	* [Comment](#comment)
-	* [Analytics](#analytics)
-	* [SEO Title](#seo-title)
-* [FAQ](#faq)
-* [Releases](#releases) 
-
+- Basics
+  - [Getting Started](#getting-started)
+  - [Development](#development)
+  - [Config](#configs)
+  - [Posts](#posts)
+- Components
+  - [SideBar](#sidebar)
+  - [Mini About Me](#mini-about-me)
+  - [Featured Tags](#featured-tags)
+  - [Friends](#friends)
+  - [Keynote Layout](#keynote-layout)
+- Misc
+  - [Comment](#comment)
+  - [Analytics](#analytics)
+  - [SEO Title](#seo-title)
+- [FAQ](#faq)
+- [Releases](#releases)
 
 ### Getting Started
 
@@ -27,7 +25,7 @@ Hux Blog User Manual
 2. Installed dependencies in the `Gemfile`:
 
 ```sh
-$ bundle install 
+$ bundle install
 ```
 
 3. Serve the website (`localhost:4000` by default):
@@ -38,7 +36,7 @@ $ bundle exec jekyll serve  # alternatively, npm start
 
 ### Development
 
-To modify the theme, you will need [Grunt](https://gruntjs.com/). There are numbers of tasks you can find in the `Gruntfile.js`, includes minifing JavaScript, compiling `.less` to `.css`, adding banners to keep the Apache 2.0 license intact, watching for changes, etc. 
+To modify the theme, you will need [Grunt](https://gruntjs.com/). There are numbers of tasks you can find in the `Gruntfile.js`, includes minifing JavaScript, compiling `.less` to `.css`, adding banners to keep the Apache 2.0 license intact, watching for changes, etc.
 
 Yes, they were inherited and are extremely old-fashioned. There is no modularization and transpilation, etc.
 
@@ -46,48 +44,46 @@ Critical Jekyll-related code are located in `_include/` and `_layouts/`. Most of
 
 This theme uses the default code syntax highlighter of jekyll, [Rouge](http://rouge.jneen.net/), which is compatible with Pygments theme so just pick any pygments theme css (e.g. from [here](http://jwarby.github.io/jekyll-pygments-themes/languages/javascript.html) and replace the content of `highlight.less`.
 
-
 ### Configs
 
 You can easily customize the blog by modifying `_config.yml`:
 
 ```yml
 # Site settings
-title: Hux Blog             # title of your website
-SEOTitle: Hux Blog          # check out docs for more detail
-description: "Cool Blog"    # ...
+title: Hux Blog # title of your website
+SEOTitle: Hux Blog # check out docs for more detail
+description: "Cool Blog" # ...
 
-# SNS settings      
-github_username: huxpro     # modify this account to yours
-weibo_username: huxpro      # the footer woule be auto-updated.
+# SNS settings
+github_username: huxpro # modify this account to yours
+weibo_username: huxpro # the footer woule be auto-updated.
 
 # Build settings
-paginate: 10                # nums of posts in one page
+paginate: 10 # nums of posts in one page
 ```
 
-For more options, please check out [Jekyll - Official Site](http://jekyllrb.com/). 
-Most of them are very descriptive so feel brave to dive into code directly as well. 
-
+For more options, please check out [Jekyll - Official Site](http://jekyllrb.com/).
+Most of them are very descriptive so feel brave to dive into code directly as well.
 
 ### Posts
 
-Posts are simply just Markdown files in the `_posts/`. 
+Posts are simply just Markdown files in the `_posts/`.
 Metadata of posts are listed in a YAML style _front-matter_.
 
 For instance, [Hello 2015])(https://huangxuan.me/2015/01/29/hello-2015/) has the front-matter of this:
 
 ```yml
 ---
-layout:     post
-title:      "Hello 2015"
-subtitle:   " \"Hello World, Hello Blog\""
-date:       2015-01-29 12:00:00
-author:     "Hux"
+layout: post
+title: "Hello 2015"
+subtitle: ' "Hello World, Hello Blog"'
+date: 2015-01-29 12:00:00
+author: "Hux"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
 tags:
-    - Life
-    - Meta
+  - Life
+  - Meta
 ---
 ```
 
@@ -106,7 +102,7 @@ There are a bunch of _advanced_ configs:
 1. a _text style_ header like [this](https://huangxuan.me/2019/09/08/spacemacs-workflow/) with
 
 ```yml
-header-style: text 
+header-style: text
 ```
 
 2. Turning on Latex support:
@@ -123,7 +119,6 @@ header-mask: 0.3
 
 Etc.
 
-
 ### SideBar
 
 ![](http://huangxuan.me/img/blog-sidebar.jpg)
@@ -132,29 +127,28 @@ Etc.
 
 ```yml
 # Sidebar settings
-sidebar: true   # default true
+sidebar: true # default true
 sidebar-about-description: "your description here"
-sidebar-avatar: /img/avatar-hux.jpg     # use absolute URL.
+sidebar-avatar: /img/avatar-hux.jpg # use absolute URL.
 ```
 
-Modules *[Featured Tags](#featured-tags)*, *[Mini About Me](#mini-about-me)* and *[Friends](#friends)* are turned on by default and you can add your own. The sidebar is naturally responsive, i.e. be pushed to bottom in a smaller screen (`<= 992px`, according to [Bootstarp Grid System](http://getbootstrap.com/css/#grid))  
-
+Modules _[Featured Tags](#featured-tags)_, _[Mini About Me](#mini-about-me)_ and _[Friends](#friends)_ are turned on by default and you can add your own. The sidebar is naturally responsive, i.e. be pushed to bottom in a smaller screen (`<= 992px`, according to [Bootstarp Grid System](http://getbootstrap.com/css/#grid))
 
 ### Mini About Me
 
-**Mini-About-Me** displays your avatar, description and all SNS buttons if  `sidebar-avatar` and `sidebar-about-description` variables are set. 
+**Mini-About-Me** displays your avatar, description and all SNS buttons if `sidebar-avatar` and `sidebar-about-description` variables are set.
 
 It would be hidden in a smaller screen when the entire sidebar are pushed to bottom. Since there is already SNS portion there in the footer.
 
 ### Featured Tags
 
 **Featured-Tags** is similar to any cool tag features in website like [Medium](http://medium.com).
-Started from V1.4, this module can be used even when sidebar is off and displayed always in the bottom. 
+Started from V1.4, this module can be used even when sidebar is off and displayed always in the bottom.
 
 ```yml
 # Featured Tags
-featured-tags: true  
-featured-condition-size: 1     # A tag will be featured if the size of it is more than this condition value
+featured-tags: true
+featured-condition-size: 1 # A tag will be featured if the size of it is more than this condition value
 ```
 
 The only thing need to be paid attention to is `featured-condition-size`, which indicate a criteria that tags need to have to be able to "featured". Internally, a condition `{% if tag[1].size > {{site.featured-condition-size}} %}` are made.
@@ -168,18 +162,12 @@ Friends information is configured as a JSON string in `_config.yml`
 
 ```yml
 # Friends
-friends: [
-    {
-        title: "Foo Blog",
-        href: "http://foo.github.io/"
-    },
-    {
-        title: "Bar Blog",
-        href: "http://bar.github.io"
-    }
-]
+friends:
+  [
+    { title: "Foo Blog", href: "http://foo.github.io/" },
+    { title: "Bar Blog", href: "http://bar.github.io" },
+  ]
 ```
-
 
 ### Keynote Layout
 
@@ -191,14 +179,13 @@ To use, in the **front-matter**:
 
 ```yml
 ---
-layout:     keynote
-iframe:     "http://huangxuan.me/js-module-7day/"
+layout: keynote
+iframe: "http://huangxuan.me/js-module-7day/"
 ---
 ```
 
-The `iframe` element will be automatically resized to adapt different form factors and device orientation. 
+The `iframe` element will be automatically resized to adapt different form factors and device orientation.
 Because most of the keynote framework prevent the browser default scroll behavior. A bottom-padding is set to help user and imply user that more content could be presented below.
-
 
 ### Comment
 
@@ -220,7 +207,6 @@ disqus_username: _your_disqus_short_name_
 
 <del>Furthermore, Duoshuo support Sharing. if you only wanna use Duoshuo comment without sharing, you can set `duoshuo_share: false`. </del>
 
-
 ### Analytics
 
 From V1.5, Google Analytics and Baidu Tongji are supported with a simple config away:
@@ -230,14 +216,13 @@ From V1.5, Google Analytics and Baidu Tongji are supported with a simple config 
 ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 
 # Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+ga_track_id: "UA-49627206-1" # Format: UA-xxxxxx-xx
 ga_domain: huangxuan.me
 ```
 
 Just checkout the code offered by Google/Baidu, and copy paste here, all the rest is already done for you.
 
 (Google might ask for meta tag `google-site-verification`)
-
 
 ### SEO Title
 
@@ -246,9 +231,7 @@ It's possible that you want the two things different. For me, my site-title is *
 
 So, the SEO Title is introduced to solve this problem, you can set `SEOTitle` different from `title`, and it would be only used to generate HTML `<title>` and setting DuoShuo Sharing.
 
-
-FAQ
----
+## FAQ
 
 #### cannot load such file -- jekyll-paginate
 
@@ -256,9 +239,7 @@ This blog started in Jekyll 2 time when `jekyll-paginate` is standard. With Jeky
 
 Make sure you installed it via plain `gem` CLI or Bundler.
 
-
-Releases
---------
+## Releases
 
 #### V1.8.2
 
@@ -274,7 +255,7 @@ Releases
 #### V1.8
 
 - Brand new [Archive](https://huangxuan.me/archive/) page! It combines previous Archive and Tag page and it's backward-cmpatible.
-Shout out to [@kitian616/jekyll-TeXt-theme](https://github.com/kitian616/jekyll-TeXt-theme) of bringing this idea. 
+  Shout out to [@kitian616/jekyll-TeXt-theme](https://github.com/kitian616/jekyll-TeXt-theme) of bringing this idea.
 - Improve engineering by extracting duplicated liquid templates into reuseable includes. This was proposed in #74 by @Kaijun but postponed for entirely 2.5 years! I wasn't able to merge his PR directly because of long-time divegence but the credit is belonging to @Kaijun.
 - Improved code block. Long-wanted line number are supported out of the box (thanks for @SmilingParadise's help from Sina Weibo), the default theme is updated to Atom One Dark as well (checkout FQA for how to change to your farovite theme)
 - MathJax support by @Voleking in #80. I choose to use the SVG renderer though. See [Mathjax, kramdown and Octopress](https://www.lucypark.kr/blog/2013/02/25/mathjax-kramdown-and-octopress/) for writing and escaping details.
@@ -313,18 +294,15 @@ Shout out to [@kitian616/jekyll-TeXt-theme](https://github.com/kitian616/jekyll-
 
 - Support **PingFang (苹方)**, the new Chinese font presented by [OS X El Capitan](http://www.apple.com/cn/osx/whats-new/)
 
-
 #### V1.3
 
-- Big Improvement to the **Navigation Menu** *(especially in Android)*:  Dropping the old, stuttering, low-performance [Bootstrap collapse.js](http://getbootstrap.com/javascript/#collapse),  replaced with an own wrote, [jank free](http://jankfree.org/) navbar menu in a pretty high-performance implementation of [Google Material Design](https://www.google.com/design/spec/material-design/introduction.html).
+- Big Improvement to the **Navigation Menu** _(especially in Android)_: Dropping the old, stuttering, low-performance [Bootstrap collapse.js](http://getbootstrap.com/javascript/#collapse), replaced with an own wrote, [jank free](http://jankfree.org/) navbar menu in a pretty high-performance implementation of [Google Material Design](https://www.google.com/design/spec/material-design/introduction.html).
 
 <img src="http://huangxuan.me/img/blog-md-navbar.gif" width="320" />
-
 
 #### V1.2
 
 - Brand new **[Keynote Layout](#keynote-layout)** is provided for easily posting beautiful HTML presentations you have created with this blog
-
 
 #### V1.1
 
@@ -340,3 +318,83 @@ Shout out to [@kitian616/jekyll-TeXt-theme](https://github.com/kitian616/jekyll-
 - Using [Github Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)
 - Using Baidu, Tencent/QQ analytics
 - Using [DuoShuo](http://duoshuo.com/) as the Disqus-like third party discussion system
+
+<hr>
+
+# Jekyll + Decap CMS with Netlify Identity
+
+This is the basic Jekyll starter site, with Decap CMS integrated and using Netlify Identity for
+authentication.
+
+## Getting started
+
+Use our deploy button to get your own copy of the repository:
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/jekyll-netlify-cms&stack=cms)
+
+This will setup everything needed for running the CMS:
+
+- A new repository in your GitHub account with the code
+- Full Continuous Deployment to Netlify's global CDN network
+- Control users and access with Netlify Identity
+- Manage content with Decap CMS
+
+The email address associated with your Netlify account will receive an email inviting you as an
+Identity user - click Accept in the email to set your new password, then navigate to `/admin` on
+your site to log in.
+
+Now you're all set, and you can start editing content!
+
+**Note:** if you switch the repo that was created to private, you'll need to regenerate your token,
+as the token generated using the deploy to Netlify button can only access public repositories. To
+regenerate your token, head to "Settings" in your Netlify site dashboard, go to the "Identity"
+section, then scroll to "Services" where you'll see an "Edit settings" button. Click that and you'll
+see a text link to "Generate access token in GitHub".
+
+## Local Development
+
+Clone this repository and run:
+
+```bash
+bundle install
+bundle exec jekyll server --watch
+```
+
+Now navigate to [localhost:4000](http://localhost:4000/) to preview the site, and
+[localhost:4000/admin](http://localhost:4000/admin) to log into the CMS.
+
+## Authenticating without Netlify Identity
+
+Netlify provides basic OAuth so you can log in to Decap CMS with your GitHub profile directly if
+you prefer not to use Netlify Identity. To do so, go to [the GitHub developer application
+screen](https://github.com/settings/developers) and **register new application**. The Authorization
+callback URL you'll need to enter is `https://api.netlify.com/auth/done`.
+
+Once you've set up the application, go back to your Netlify site dashboard, navigate to the
+**Access** tab. Then fill in your new Client ID and Client Secret in the Github Authentication
+Provider section and check the **Enable GitHub** box.
+
+You'll then need to update the `backend` settings at the top of the `admin/config.yml` file in your
+site repo:
+
+```yaml
+backend:
+  name: github
+  repo: username/repo # your GitHub username and repository name, separated by a slash
+  branch: master # optional, default value is "master"
+```
+
+Now anybody with write access to your GitHub repository can log in at yoursite.netlify.com/admin
+and use the CMS.
+
+**Enjoy!**
+
+## Bug reports, feature requests, etc
+
+We love feedback, contributions, better documentation, tutorials, general comments,
+random hatemail, rants, love, crazy ideas, etc, etc!
+
+Contact us at [any of netlify's normal channels](https://www.netlify.com/contact) and
+open issues or pull requests for Netlify CMS at [the netlify-cms GitHub
+repo](https://github.com/netlify/netlify-cms). If you need realtime help with setting up Netlify
+CMS, you can reach out in the [Netlify CMS Gitter](https://gitter.im/netlify/netlifycms).
