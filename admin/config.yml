@@ -2,6 +2,7 @@
 
 backend:
   name: git-gateway
+  repo: vishalscodes/sks
   branch: main
 media_folder: "assets/uploads"
 collections:
