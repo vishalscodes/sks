@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: vishalscodes/sks
+  name: git-gateway
   branch: main # Branch to update (master by default)
 
 media_folder: "img/uploads" # Folder where user uploaded files should go
