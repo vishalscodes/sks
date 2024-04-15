@@ -132,24 +132,6 @@
 {% endif %}
 
 
-<!-- Baidu Tongji -->
-{% if site.ba_track_id %}
-<script>
-    // dynamic User by Hux
-    var _baId = '{{ site.ba_track_id }}';
-
-    // Originial
-    var _hmt = _hmt || [];
-    (function () {
-        var hm = document.createElement("script");
-        hm.src = "//hm.baidu.com/hm.js?" + _baId;
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>
-{% endif %}
-
-
 <!-- Side Catalog -->
 {% unless page.no-catalog %}
 <script type="text/javascript">
@@ -324,12 +306,13 @@
         });
     });
 </script>
+
 <script>
     if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", (user) => {
+      window.netlifyIdentity.on('init', user => {
         if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
+          window.netlifyIdentity.on('login', () => {
+            document.location.href = '/admin/';
           });
         }
       });
