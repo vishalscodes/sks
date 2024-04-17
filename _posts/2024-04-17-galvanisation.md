@@ -10,3 +10,7 @@ tags:
 thumbnail: /img/in-post/post-metro-ui.jpg
 ---
 Rich zinc coating
+
+
+
+![imagename](/img/in-post/forcify.jpg "forcify")
