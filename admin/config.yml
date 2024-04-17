@@ -41,7 +41,6 @@ collections:
           step: 0.1,
           required: false,
         }
-      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Body", name: "body", widget: "markdown" }
       # - { label: "Image caption", name: "imageAlt", widget: "string", required: false, }
       # - { label: "Featured Image", name: "header-image", widget: "image", choose_url: false, }
