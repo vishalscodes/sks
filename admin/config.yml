@@ -13,6 +13,12 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - {
+          label: "Header Style",
+          name: "header-style",
+          widget: "hidden",
+          default: "text",
+        }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Subtitle", name: "subtitle", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
