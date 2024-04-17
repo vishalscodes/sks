@@ -19,6 +19,11 @@ collections:
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
-      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - {
+          label: "Featured Image",
+          name: "header-img",
+          widget: "image",
+          choose_url: false,
+        }
       - { label: "Body", name: "body", widget: "markdown" }
       # - { label: "Image caption", name: "imageAlt", widget: "string", required: false, }
