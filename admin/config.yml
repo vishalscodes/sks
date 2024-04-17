@@ -3,7 +3,7 @@ backend:
   repo: vishalscodes/sks
   branch: main # Branch to update (optional; defaults to master)
 
-media_folder: "images/uploads"
+media_folder: "img/"
 
 collections:
   - name: "post" # Used in routes, e.g., /admin/collections/blog
@@ -12,6 +12,7 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Subtitle", name: "subtitle", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
