@@ -21,9 +21,30 @@ collections:
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - {
           label: "Featured Image",
-          name: "header-img",
+          name: "header-image",
           widget: "image",
           choose_url: false,
         }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Header Image", name: "header-img", widget: "string" }
+      - {
+          label: "Header Image Credit",
+          name: "header-img-credit",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Header Image Credit Href",
+          name: "header-img-credit-href",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Header Mask",
+          name: "header-mask",
+          widget: "number",
+          min: 0,
+          max: 1,
+          step: 0.1,
+          required: false,
+        }
       # - { label: "Image caption", name: "imageAlt", widget: "string", required: false, }
