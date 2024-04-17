@@ -9,5 +9,7 @@ tags:
   - post
 image: https://www.cricbuzz.com/a/img/v1/980x654/i1/c430851/the-rcb-srh-match-may-just-hav.jpg
 imageAlt: Death
+header-style: text
 ---
+
 Virat Kohli's side died after receiving the death penalty from SRH.
