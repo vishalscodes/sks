@@ -3,7 +3,7 @@ backend:
   repo: vishalscodes/sks
   branch: main # Branch to update (optional; defaults to master)
 
-media_folder: "img/"
+media_folder: "img/in-post/"
 
 collections:
   - name: "post" # Used in routes, e.g., /admin/collections/blog
@@ -19,6 +19,6 @@ collections:
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
-      - { label: "Featured Image", name: "image", widget: "image" }
-      - { label: "Image caption", name: "imageAlt", widget: "string" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
+      # - { label: "Image caption", name: "imageAlt", widget: "string", required: false, }
