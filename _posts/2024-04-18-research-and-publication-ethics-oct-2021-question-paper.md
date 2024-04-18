@@ -9,8 +9,6 @@ tags:
 ---
 **Link to Video: https://www.youtube.com/watch?v=nnjqX-PpvKM**
 
-# The Summary - 
-
 This video is about the question paper for the subject research and publication ethics of VTU PHD coursework examination for the year October 2021.
 
 ## Module 1: Philosophy and Ethics
@@ -18,7 +16,6 @@ This video is about the question paper for the subject research and publication 
 * Define philosophy and explain the nature of philosophy
 * Write a note on ethics and explain the terms moral philosophy, meta ethics, normative ethics and applied ethics.
 
-## 
 Module 2: Normative Science, Positive Science and Scientific Misconduct
 
 * Explain ethics with respect to normative science and positive science
@@ -27,7 +24,6 @@ Module 2: Normative Science, Positive Science and Scientific Misconduct
 * What is plagiarism?
 * State any possible six reasons for plagiarism
 
-## 
 Module 3: Conflict of Interest and Publication Ethics
 
 * What is meant by conflict of interest in research?
