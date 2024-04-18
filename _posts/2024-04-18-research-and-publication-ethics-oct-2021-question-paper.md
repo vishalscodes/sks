@@ -7,7 +7,7 @@ date: 2024-04-18T19:54:00.000Z
 tags:
   - VTU
 ---
-**Link to Video: https://www.youtube.com/watch?v=nnjqX-PpvKM**
+**Link to Video: <https://www.youtube.com/watch?v=nnjqX-PpvKM>**
 
 This video is about the question paper for the subject research and publication ethics of VTU PHD coursework examination for the year October 2021.
 
