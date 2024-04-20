@@ -90,7 +90,8 @@
 {% endif %}
 
 {% if include.type == 'page' %}
-<header class="nightowl-daylight intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+<div class="nightowl-daylight" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+<header class="intro-header" >
   <div class="header-mask"></div>
   <div class="container">
     <div class="row">
@@ -107,4 +108,5 @@
     </div>
   </div>
 </header>
+</div>
 {% endif %}
