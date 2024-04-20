@@ -1,15 +1,19 @@
 ---
 layout: post
-title: Prismatic Capybara
-subtitle: Mini Pod
-description: Bada Pani Puri
+title: Blog Template
 author: Shashi KS
-date: 2024-04-17T16:15:00.000Z
-tags:
-  - post
-image: https://www.cricbuzz.com/a/img/v1/980x654/i1/c430851/the-rcb-srh-match-may-just-hav.jpg
 imageAlt: Death
+date: 2024-04-17T16:15:00.000Z
 header-style: text
+subtitle: Subtitle
+tags: []
+image: https://www.cricbuzz.com/a/img/v1/980x654/i1/c430851/the-rcb-srh-match-may-just-hav.jpg
+description: Bada Pani Puri
 ---
+**Link to the video:**
 
-Virat Kohli's side died after receiving the death penalty from SRH.
+## Introduction
+
+**content goes here**
+
+## Conclusion
