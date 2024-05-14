@@ -15,7 +15,7 @@ I created this website to connect with you all and also increase our versatility
 - Content on Operating Systems, C Programming, Java & J2EE, Data Structures, Compiler Design, System Software, etc.
 - Content on useful software applications
 - Preparatory Materials, Solved Question Papers for GATE, TRB, UGC NET, PGTRB, PGT CS Exam.
-- Important and Reliable Educational updates /Social Awareness Content.
+- Important and Reliable Educational updates/Social Awareness Content.
 
 ## Social Media Links
 
